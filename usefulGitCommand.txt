@@ -1,0 +1,19 @@
+Copy that URL from the browser, go into the local planets repository, and run this command:
+
+$ git remote add origin https://github.com/vlad/planets.git
+Make sure to use the URL for your repository rather than Vlad’s: the only difference should be your username instead of vlad.
+
+We can check that the command has worked by running git remote -v:
+
+$ git remote -v
+origin   https://github.com/vlad/planets.git (push)
+origin   https://github.com/vlad/planets.git (fetch)
+The name origin is a local nickname for your remote repository. We could use something else if we wanted to, but origin is by far the most common choice.
+
+Once the nickname origin is set up, this command will push the changes from our local repository to the repository on GitHub:
+
+$ git push origin master
+
+We can pull changes from the remote repository to the local one as well:
+
+$ git pull origin master
